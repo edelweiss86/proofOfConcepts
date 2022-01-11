@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/cookieThief"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="270dp"
+        android:layout_height="44dp"
+        android:background="#FF283CED"
+        android:fontFamily="sans-serif"
+        android:text="Cookie Thief POC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/floatingWindowBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <Button
+        android:id="@+id/floatingWindowBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="270dp"
+        android:layout_height="44dp"
+        android:background="#FF283CED"
+        android:fontFamily="sans-serif"
+        android:text="Floating Window POC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <Button
+        android:id="@+id/screenShot"
+        android:layout_width="270dp"
+        android:layout_height="44dp"
+        android:background="#FF283CED"
+        android:text="Screenshot POC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingWindowBtn"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/networkInterfaces"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="270dp"
+        android:layout_height="44dp"
+        android:background="#FF283CED"
+        android:text="Print Network Interfaces"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenShot"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/infoBoard"
+        android:layout_width="270dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/networkInterfaces"
+        app:layout_constraintVertical_bias="0.003" />
+</androidx.constraintlayout.widget.ConstraintLayout>
